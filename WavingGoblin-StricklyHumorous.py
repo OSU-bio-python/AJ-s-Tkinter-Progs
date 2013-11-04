@@ -1,10 +1,18 @@
 from Tkinter import*
 from time import*
+
+
+
 class FrameObject(Frame):
+
+    screen_width  = 500
+    screen_height = screen_width
+
+
     def __init__(self):
         Frame.__init__(self)
         #get the canvas
-        self.goblincanvas = Canvas(width=1000, height=1000, bg="#8DABC3")
+        self.goblincanvas = Canvas(width=screen_width, height=screen_height, bg="#8DABC3")
         self.goblincanvas.grid()
         #make the ground
         self.goblincanvas.create_rectangle(0, 670, 1000, 1000, fill="#906820", outline="#906820")
