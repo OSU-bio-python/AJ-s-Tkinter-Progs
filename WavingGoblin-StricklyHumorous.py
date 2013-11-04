@@ -12,6 +12,7 @@ class FrameObject(Frame):
 
     screen_width  = 500
     screen_height = screen_width
+    ground_height = int(screen_height*0.4)
 
 
     def __init__(self):
@@ -20,7 +21,7 @@ class FrameObject(Frame):
         self.goblincanvas = Canvas(width=screen_width, height=screen_height, bg="#8DABC3")
         self.goblincanvas.grid()
         #make the ground
-        self.goblincanvas.create_rectangle(0, 670, 1000, 1000, fill="#906820", outline="#906820")
+        self.goblincanvas.create_rectangle(0, 400, 1000, 1000, fill="#906820", outline="#906820")
         self.goblincanvas.create_line(40, 800, 20, 750, width=2, fill="#74BA44")
         self.goblincanvas.create_line(40, 800, 40, 750, width=2, fill="#74BA44")
         self.goblincanvas.create_line(40, 800, 60, 750, width=2, fill="#74BA44")
