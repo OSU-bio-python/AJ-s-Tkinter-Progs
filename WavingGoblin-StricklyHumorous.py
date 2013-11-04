@@ -1,7 +1,12 @@
-from Tkinter import*
-from time import*
+from Tkinter import *
+from time import *
 
+root = Tk()
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
 
+print(screen_width)
+print(screen_height)
 
 class FrameObject(Frame):
 
