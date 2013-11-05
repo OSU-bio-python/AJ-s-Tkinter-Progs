@@ -7,6 +7,10 @@ class FrameObject(Frame):
 
     screen_width  = 500
     screen_height = screen_width
+<<<<<<< HEAD
+=======
+    ground_height = int(screen_height*0.4)
+>>>>>>> hotfix
 
     def __init__(self):
         Frame.__init__(self)
