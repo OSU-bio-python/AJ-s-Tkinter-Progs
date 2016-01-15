@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 from time import *
 
 root = Tk()
@@ -26,7 +26,7 @@ class FrameObject(Frame):
         #get the canvas
         self.goblincanvas = Canvas(width=screen_width, height=screen_height, bg="#8DABC3")
         self.goblincanvas.grid()
-        print screen_width
+        print (screen_width)
         #make the ground and grass
         self.goblincanvas.create_rectangle(10, 100, 1200, 600, fill="#906820", outline="#906820")
         self.goblincanvas.create_line(40, 200, 20, 150, width=2, fill="#74BA44")
